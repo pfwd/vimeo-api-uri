@@ -22,4 +22,13 @@ class VideoURITest extends \Codeception\Test\Unit
         $uri = new \PFWD\Vimeo\URI\VideoURI();
         $this->assertEquals('/me/videos/', $uri->getMyVideos());
     }
+
+    /**
+     * @group video
+     */
+    public function testGetVideo()
+    {
+        $uri = new \PFWD\Vimeo\URI\VideoURI();
+        $this->assertEquals('/videos/1', $uri->getVideo(1));
+    }
 }

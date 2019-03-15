@@ -21,4 +21,14 @@ class VideoURI {
         return '/me/videos/';
     }
 
+    /**
+     * @param int $videoID
+     *
+     * @return string
+     */
+    public function getVideo(int $videoID): string
+    {
+        return '/videos/'.$videoID;
+    }
+
 }
