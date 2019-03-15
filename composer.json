@@ -12,6 +12,9 @@
             "role": "Developer"
         }
     ],
+    "suggest": {
+        "pfwd/vimeo-entities": "A set of PHP entities that represent responses from the Vimeo API"
+    },
     "autoload": {
         "psr-4": {
             "PFWD\\Vimeo\\": "src/Vimeo/"
