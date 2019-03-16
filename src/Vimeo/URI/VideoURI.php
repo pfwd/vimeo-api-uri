@@ -31,4 +31,33 @@ class VideoURI {
         return '/videos/'.$videoID;
     }
 
+    /**
+     * @param int $videoID
+     *
+     * @return string
+     */
+    public function deleteVideo(int $videoID): string
+    {
+        return $this->getVideo($videoID);
+    }
+
+    /**
+     * @param int $videoID
+     *
+     * @return string
+     */
+    public function editVideo(int $videoID): string
+    {
+        return $this->getVideo($videoID);
+    }
+
+    /**
+     * @param int $videoID
+     *
+     * @return string
+     */
+    public function addVersion(int $videoID): string
+    {
+        return '/videos/'.$videoID.'/versions';
+    }
 }

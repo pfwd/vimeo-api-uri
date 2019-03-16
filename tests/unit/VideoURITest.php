@@ -31,4 +31,31 @@ class VideoURITest extends \Codeception\Test\Unit
         $uri = new \PFWD\Vimeo\URI\VideoURI();
         $this->assertEquals('/videos/1', $uri->getVideo(1));
     }
+
+    /**
+     * @group video
+     */
+    public function testAddVersion()
+    {
+        $uri = new \PFWD\Vimeo\URI\VideoURI();
+        $this->assertEquals('/videos/1/versions', $uri->addVersion(1));
+    }
+
+    /**
+     * @group video
+     */
+    public function testDeleteVideo()
+    {
+        $uri = new \PFWD\Vimeo\URI\VideoURI();
+        $this->assertEquals('/videos/1', $uri->deleteVideo(1));
+    }
+
+    /**
+     * @group video
+     */
+    public function testEditVideo()
+    {
+        $uri = new \PFWD\Vimeo\URI\VideoURI();
+        $this->assertEquals('/videos/1', $uri->editVideo(1));
+    }
 }
