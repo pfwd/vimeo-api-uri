@@ -1,5 +1,5 @@
 # vimeo-api-uri
-A PHP Library that holds Vimeo API URI's
+A PHP Library that holds Vimeo API URI's. This is used to facade the URI's incase they change in the future
 
 ## Install
 ```
