@@ -16,4 +16,4 @@ $ bin/codecept run unit
 ```
 
 # TODO
-Project and Video are currently only supported
+Project and Video URI's are currently only supported
